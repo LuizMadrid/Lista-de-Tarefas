@@ -1,0 +1,68 @@
+@charset "UFT-8";
+
+body {
+  background-color: #e3e3e3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  background-color: #fff;
+  border: 1px solid #555;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+form {
+  background-color: #ddd;
+  border: 1px solid #999;
+  padding: 1em;
+  display: flex;
+}
+
+input {
+  flex: 1;
+  font-size: 1.5em;
+  margin-right: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  background-color: #ddd;
+  padding: 5px;
+  border: 1px solid #999;
+}
+
+li input {
+  flex: 1;
+  border: none;
+  color: #000;
+}
+
+button {
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-adicionar {
+  background-color: #393;
+  font-size: 1.5em;
+}
+
+.btn-editar {
+  background-color: #55f;
+  font-size: 1em;
+}
+
+.btn-apagar {
+  background-color: #f55;
+  font-size: 1em;
+}
