@@ -10,6 +10,28 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function adicionarItem(texto) {
-    console.log(texto);
+    const item = document.createElement("li");
+    const msg = document.createElement("input");
+    msg.disabled = true;
+    msg.value = texto;
+
+    const containerBotoes = document.createElement("div");
+    const botaoEditar = document.createElement("button");
+    const botaoApagar = document.createElement("button");
+
+    botaoEditar.innerText = "Editar";
+    botaoApagar.innerText = "Apagar";
+
+    botaoEditar.classList.add("btn-editar");
+    botaoApagar.classList.add("btn-apagar");
+
+    containerBotoes.append(botaoEditar);
+    containerBotoes.append(botaoApagar);
+
+    item.append(msg);
+    item.append(containerBotoes);
+    listaItens.append(item);
+
+    novoItemInput.value = "";
   }
 });
