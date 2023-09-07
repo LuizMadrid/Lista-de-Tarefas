@@ -1,20 +1,24 @@
 @charset "UFT-8";
 
 body {
-  background-color: #e3e3e3;
+  background: #b7deed;
+  background: linear-gradient(to right, #b7deed 0%, #71ceef 25%, #21b4e2 75%, #b7deed 100%);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
-  background-color: #fff;
+  background-color: #ffffff88;
   border: 1px solid #555;
+  border-radius: 1rem;
   padding: 1em;
-  margin: 0 auto;
+  height: 53.125rem;
+  margin: 1.25rem 15%;
 }
 
 form {
-  background-color: #ddd;
-  border: 1px solid #999;
+  background-color: #dddddd55;
+  border: 1px solid #aaa;
+  border-radius: 0.625rem;
   padding: 1em;
   display: flex;
 }
@@ -34,9 +38,10 @@ li {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
-  background-color: #ddd;
+  background-color: #fff;
   padding: 5px;
-  border: 1px solid #999;
+  border: 1px solid #aaa;
+  border-radius: 0.625rem;
 }
 
 li input {
@@ -47,24 +52,45 @@ li input {
 
 button {
   color: #fff;
+  width: 2.1875rem;
   border: none;
+  border-radius: 0.625rem;
   font-weight: bold;
   cursor: pointer;
 }
 
 .btn-adicionar {
   background-color: #393;
+  transition: all 0.2s ease-in;
   font-size: 1.5em;
 }
 
 .btn-editar {
   background-color: #55f;
+  transition: all 0.2s ease-in;
   font-size: 1em;
+  height: 1.75rem;
+  width: 4.375rem;
 }
 
 .btn-apagar {
   background-color: #f55;
+  transition: all 0.2s ease-in;
   font-size: 1em;
+  height: 1.75rem;
+  width: 4.375rem;
+}
+
+.btn-adicionar:hover {
+  background-color: #5b5;
+}
+
+.btn-editar:hover {
+  background-color: #77f;
+}
+
+.btn-apagar:hover {
+  background-color: #f88;
 }
 
 .desabilitado {
