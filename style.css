@@ -1,4 +1,5 @@
 @charset "UFT-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@400;500;600;700;800;900&display=swap");
 
 body {
   background: #b7deed;
@@ -6,13 +7,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body h1 {
+  display: flex;
+  justify-content: center;
+
+  font-size: 3.4375rem;
+  font-family: "Dancing Script", cursive;
+  margin: 0px;
+  position: relative;
+  top: 1.25rem;
+  letter-spacing: 0.3125rem;
+}
+
 main {
   background-color: #ffffff88;
   border: 1px solid #555;
   border-radius: 1rem;
   padding: 1em;
-  height: 53.125rem;
-  margin: 1.25rem 15%;
+  height: 50rem;
+  margin: 0rem 15%;
 }
 
 form {
@@ -38,7 +51,7 @@ li {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
-  background-color: #fff;
+  background-color: #ddd;
   padding: 5px;
   border: 1px solid #aaa;
   border-radius: 0.625rem;
@@ -100,4 +113,29 @@ button {
 .container-botoes {
   display: flex;
   gap: 0.625rem;
+}
+
+.btn-salvar {
+  background-color: #393;
+  transition: all 0.2s ease-in;
+  font-size: 1em;
+  height: 1.75rem;
+  width: 4.375rem;
+}
+
+.btn-cancelar {
+  background-color: #f55;
+  transition: all 0.2s ease-in;
+  font-size: 1em;
+  height: 1.75rem;
+  width: 5.3125rem;
+}
+
+.container-botoes-salvar-cancelar {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.esconder-botoes {
+  display: none !important;
 }
